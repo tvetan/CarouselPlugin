@@ -4,31 +4,35 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Carousel Plugin Demo Page</title>
-    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <link rel="stylesheet" href="style/index.css" />
 </head>
 <body>
     <div class="body">
         <div class="carousel-container">
             <div class="carousel-body">
-                <div class="slide">
-                    <img src="img/Armin_Roadmovie_episode_3.png" />
+                <div class="slides">
+                    <div class="slide active-slide">
+                        <img src="img/Armin_Roadmovie_episode_3.png" />
+                    </div>
+                    <div class="slide">
+                        <img src="img/Night-1.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/Night-3.jpg">
+                    </div>
+                    <div class="slide">
+                        <img src="img/Night-in-full-action.jpg">
+                    </div>
                 </div>
-                <div class="slide">
-
-                </div>
-                <div class="slide">
-                    <img src="img/Night-1.jpg">
-                </div>
-                <div class="slide">
-                    <img src="img/Night-3.jpg">
-                </div>
-                <div class="slide">
-                    <img src="img/Night-in-full-action.jpg">
-                </div>
-
                 <ul class="carousel-pagination">
+                    <li class="pagination-item active">
+                        <a href="#"></a>
+                    </li>
                     <li class="pagination-item">
-                        <a href="#" class="active"></a>
+                        <a href="#"></a>
+                    </li>
+                     <li class="pagination-item">
+                        <a href="#"></a>
                     </li>
                     <li class="pagination-item">
                         <a href="#"></a>
@@ -45,6 +49,23 @@
                 <h1>Lasest news</h1>
             </div>
         </div>
+
+        <button id="click-me" class="test1 test2">
+            something to click
+        </button>
+
+         <button id="click-me" class="test2">
+            other to click
+        </button>
     </div>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/carousel.js"></script>
+
+    <script>
+    $(function() {
+        console.log($.support.transition);
+        $(".slides").carousel();
+    })
+    </script>
 </body>
 </html>

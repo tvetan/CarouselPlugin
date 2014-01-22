@@ -27,6 +27,11 @@ ul, h1{
 
 .slide{
 	position: absolute;
+	display: none;
+}
+
+.active-slide{
+	display: block;
 }
 
 .carousel-footer{
@@ -65,7 +70,7 @@ ul, h1{
 	background: #ea1a22;
 }
 
-.pagination-item .active{
+.carousel-pagination .active a{
 	background: #ea1a22;
 }
 
