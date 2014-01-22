@@ -1,6 +1,117 @@
 .body{
 	width: 960px;
-	height: 300px;
 	margin: 0 auto;
-	background-color: red;
+	height: 2000px;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul, h1{
+	padding: 0;
+	margin: 0;
+}
+
+.carousel-container{
+	width: 480px;
+	position: relative;
+	
+}
+
+.carousel-body{
+	height: 480px;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide{
+	position: absolute;
+}
+
+.carousel-footer{
+	text-transform: uppercase;
+	padding: 15px 10px;
+	font-weight: bold;
+	color: white;
+	background-color: #2c2c2c;
+}
+
+.carousel-pagination{
+	position: absolute;
+	bottom: 38px;
+	text-align: center;
+	width: 480px;
+}
+
+.carousel-pagination .pagination-item{
+	display: inline-block;
+	margin-left: 11px;
+}
+
+.pagination-item a{
+	display: block;
+	width: 11px;
+	height: 11px;
+	background: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.pagination-item a:hover{
+	background: #ea1a22;
+}
+
+.pagination-item .active{
+	background: #ea1a22;
+}
+
+.caurosel-button{
+	display: block;
+	position: absolute;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	width: 80px;
+	opacity: 0;
+	padding-top: 50%;
+	text-align: center;
+}
+
+.caurosel-next-button{
+	right: 0;
+}
+
+.carousel-body:hover .caurosel-button{
+	opacity: 1;
+}
+
+.arrow-white{
+	width: 16px;
+	height: 14px;
+	background: url('http://arminonly.s3.amazonaws.com/production/assets/arrows-s0cf4c5353c-98fcec0c1a309bc818ba03d690fe0a1c.png');
+	background-position: 0 -22px;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 40%;
+}
+
+.arrow-left{
+	left: 40%;
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.arrow-right {
+	right: 40%;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg);
 }
