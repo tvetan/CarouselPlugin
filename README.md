@@ -1,2 +1,4 @@
-CarouselPlugin
+Carousel Plugin
 ==============
+
+Simple Carousel
