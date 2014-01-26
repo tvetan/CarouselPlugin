@@ -28,11 +28,51 @@ ul, h1{
 .slide{
 	position: absolute;
 	display: none;
+	-webkit-transition: .6s ease-in-out left;
+	transition: .6s ease-in-out left;
 }
 
-.active-slide{
+.active-slide, .next, .prev{
 	display: block;
+
 }
+.active-slide{
+	left: 0;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+.next {
+    left: 100%;
+  }
+.prev {
+    left: -100%;
+}
+.next.left,
+.prev.right {
+    left: 0;
+  }
+
+.active-slide.left {
+    left: -100%;
+  }
+.active-slide.right {
+    left: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 .carousel-footer{
 	text-transform: uppercase;
